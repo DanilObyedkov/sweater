@@ -1,0 +1,9 @@
+package com.example.sweater.repos;
+
+import com.example.sweater.domain.User;
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepo extends JpaRepository <User, Long> {
+    User findAllByUsername (String username);
+}
