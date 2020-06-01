@@ -5,5 +5,5 @@ import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfig
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepo extends JpaRepository <User, Long> {
-    User findAllByUsername (String username);
+    User findByUsername(String username);
 }
